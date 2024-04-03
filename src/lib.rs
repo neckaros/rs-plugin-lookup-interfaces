@@ -1,4 +1,7 @@
+use std::{any::Any, collections::HashMap};
+
 use plugin_request_interfaces::RsRequest;
+use rs_plugin_common_interfaces::PluginCredential;
 use serde::{Deserialize, Serialize};
 use strum_macros::EnumString;
 
@@ -36,6 +39,15 @@ pub struct RsLookupMovie {
     pub tmdb: Option<u64>,
     pub trakt: Option<u64>,
     pub otherids: Option<String>,
+}
+
+#[derive(Debug, Serialize, Deserialize, Clone, PartialEq)]
+#[serde(rename_all = "camelCase")] 
+pub struct RsLookupWrapper {
+    pub query: RsLookupQuery,
+    pub credential: Option<PluginCredential>,
+    pub params: Option<HashMap<String, String>>
+
 }
 
 
