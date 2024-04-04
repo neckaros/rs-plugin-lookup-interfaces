@@ -16,11 +16,11 @@ checksum = "49f1f14873335454500d59611f1cf4a4b0f786f9ac11f4312a78e4cf2566695b"
 
 [[package]]
 name = "plugin-request-interfaces"
-version = "0.8.2"
+version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "be7befeb4ba1675d686f5e086a7320bb50c6dfcf5cefa049d3df582d05794b56"
+checksum = "0a22601f22c3ef9f462411adc49c6adfc0c907222b2fd71cec5e73aebc667e50"
 dependencies = [
- "rs-plugin-common-interfaces 0.4.2",
+ "rs-plugin-common-interfaces",
  "serde",
  "serde_json",
  "strum",
@@ -47,18 +47,6 @@ dependencies = [
 
 [[package]]
 name = "rs-plugin-common-interfaces"
-version = "0.4.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d3bf009a0ab669a5888147460f828e0bea4be28f09e997b759d15f0c809384eb"
-dependencies = [
- "serde",
- "serde_json",
- "strum",
- "strum_macros",
-]
-
-[[package]]
-name = "rs-plugin-common-interfaces"
 version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f9e0ea719ce8ef65a3dad625e083b41efdfa844a1d950b5b0b2a59136c215e24"
@@ -71,10 +59,10 @@ dependencies = [
 
 [[package]]
 name = "rs-plugin-lookup-interfaces"
-version = "0.2.0"
+version = "0.3.0"
 dependencies = [
  "plugin-request-interfaces",
- "rs-plugin-common-interfaces 0.5.0",
+ "rs-plugin-common-interfaces",
  "serde",
  "serde_json",
  "strum",
