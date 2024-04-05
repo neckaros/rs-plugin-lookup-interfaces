@@ -1,4 +1,4 @@
-use std::{any::Any, collections::HashMap};
+use std::collections::HashMap;
 
 use plugin_request_interfaces::RsRequest;
 use rs_plugin_common_interfaces::PluginCredential;
